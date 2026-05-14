@@ -1,0 +1,22 @@
+defaults:
+  - finetune
+
+handler: PUM
+
+method_args:
+  cfg: ${..pum}
+
+pum:
+  R: 5
+  m: 3
+  kappa: 0.01
+  eta_srv: 1.0
+  rope_aware: true
+  client_method: GradAscent
+
+  # Epoch-Based Inner Loop
+  client_round_epoch: null
+
+  # Legacy Fallback
+  client_steps: 10
+  client_lr: 1e-5

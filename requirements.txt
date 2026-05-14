@@ -1,0 +1,14 @@
+huggingface-hub
+transformers
+numpy
+hydra-core
+hydra_colorlog
+torch
+datasets
+accelerate
+bitsandbytes
+rouge-score
+scipy
+tensorboard
+scikit-learn
+deepspeed
